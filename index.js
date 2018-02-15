@@ -35,7 +35,7 @@ var api = new ParseServer({
 // javascriptKey, restAPIKey, dotNetKey, clientKey
 
 // Parse Dashboard 
-var allowInsecureHTTP = true;
+var allowInsecureHTTP = false;
 var dashboard = new ParseDashboard({
   // Parse Dashboard settings
   "apps": [
