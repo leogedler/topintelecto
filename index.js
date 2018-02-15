@@ -14,7 +14,8 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://admin:ingtelekto@localhost:27017/ing',
+  // databaseURI: databaseUri || 'mongodb://admin:ingtelekto@localhost:27017/ing',
+  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'ingtelektoApp',
   masterKey: process.env.MASTER_KEY || 'ingtelektoApp2016', //Add your master key here. Keep it secret!
@@ -22,12 +23,12 @@ var api = new ParseServer({
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
-  filesAdapter: new S3Adapter(
-    "AKIAJYBDRE5TQ4CQQPMQ",
-    "IrGstAU+x7hBUDEscAA0C6KewUnESbuDBfKmckxH",
-    "ingtelekto",
-    {directAccess: true, bucketPrefix: 'images/'}
-  ),
+  // filesAdapter: new S3Adapter(
+  //   "AKIAJYBDRE5TQ4CQQPMQ",
+  //   "IrGstAU+x7hBUDEscAA0C6KewUnESbuDBfKmckxH",
+  //   "ingtelekto",
+  //   {directAccess: true, bucketPrefix: 'images/'}
+  // ),
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:

@@ -1,11 +1,11 @@
 {
-  "name": "parse-server-example",
+  "name": "topingtecto",
   "version": "1.4.0",
   "description": "An example Parse API server using the parse-server module",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ParsePlatform/parse-server-example"
+    "url": "https://github.com/leogedler/topintelecto.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -14,7 +14,8 @@
     "moment": "^2.17.1",
     "parse": "~1.8.0",
     "parse-image": "^0.2.0",
-    "parse-server": "~2.2.19"
+    "parse-server": "~2.2.19",
+    "parse-dashboard": "^1.1.2"
   },
   "scripts": {
     "start": "node index.js"
