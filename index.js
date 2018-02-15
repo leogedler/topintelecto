@@ -40,7 +40,7 @@ var dashboard = new ParseDashboard({
   // Parse Dashboard settings
   "apps": [
     {
-      "serverURL": "https://localhost/api",
+      "serverURL": process.env.SERVER_URL || "https://localhost/api",
       "appId": "ingtelektoApp",
       "masterKey": "ingtelektoApp2016",
       "appName": "Ingtelekto"
