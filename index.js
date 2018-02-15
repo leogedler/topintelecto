@@ -19,7 +19,7 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'ingtelektoApp',
   masterKey: process.env.MASTER_KEY || 'ingtelektoApp2016', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'https://localhost/api',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'https://topintelecto-server.herokuapp.com/api',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
