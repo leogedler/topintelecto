@@ -35,7 +35,7 @@ var api = new ParseServer({
 // javascriptKey, restAPIKey, dotNetKey, clientKey
 
 // Parse Dashboard 
-var allowInsecureHTTP = false;
+var options = { allowInsecureHTTP: true };
 var dashboard = new ParseDashboard({
   // Parse Dashboard settings
   "apps": [
@@ -52,7 +52,7 @@ var dashboard = new ParseDashboard({
        "pass":"ingtelekto2016",
        "apps": [{"appId": "ingtelektoApp"}]
      }],
-}, allowInsecureHTTP);
+}, options);
 
 var app = express();
 
